@@ -1,12 +1,10 @@
 <template lang="pug">
   div
-    p oi
+    h2 Checkbox
 </template>
 
 <script>
 export default {
+  name: 'checkbox'
 }
 </script>
-
-<style lang="stylus">
-</style>

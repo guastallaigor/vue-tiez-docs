@@ -5,117 +5,238 @@
         .label Getting Started
         .posts
           .link
-            .link-inside
-              a(nuxt-link="/installation") Installation
+            .link-inside(:class="isSelected('installation')")
+              nuxt-link(
+                to="/installation"
+                :class="isSelected('installation')"
+              ) Installation
           .link
-            .link-inside
-              a(nuxt-link="/configuration") Configuration
+            .link-inside(:class="isSelected('configuration')")
+              nuxt-link(
+                to="/configuration"
+                :class="isSelected('configuration')"
+              ) Configuration
           .link
-            .link-inside
-              a(nuxt-link="/browser-support") Browser Support
+            .link-inside(:class="isSelected('browser-support')")
+              nuxt-link(
+                to="/browser-support"
+                :class="isSelected('browser-support')"
+              ) Browser Support
           .link
-            .link-inside
-              a(nuxt-link="/contributors") Contributors
+            .link-inside(:class="isSelected('contributors')")
+              nuxt-link(
+                to="/contributors"
+                :class="isSelected('contributors')"
+              ) Contributors
       .category.level-1
         .label Styles
         .posts
           .link
-            .link-inside
-              a(nuxt-link="/colors") Colors
+            .link-inside(:class="isSelected('colors')")
+              nuxt-link(
+                to="/colors"
+                :class="isSelected('colors')"
+              ) Colors
           .link
-            .link-inside
-              a(nuxt-link="/headings") Headings
+            .link-inside(:class="isSelected('headings')")
+              nuxt-link(
+                to="/headings"
+                :class="isSelected('headings')"
+              ) Headings
           .link
-            .link-inside
-              a(nuxt-link="/lists") Lists
+            .link-inside(:class="isSelected('lists')")
+              nuxt-link(
+                to="/lists"
+                :class="isSelected('lists')"
+              ) Lists
           .link
-            .link-inside
-              a(nuxt-link="/paragraphs") Paragraphs
+            .link-inside(:class="isSelected('paragraphs')")
+              nuxt-link(
+                to="/paragraphs"
+                :class="isSelected('paragraphs')"
+              ) Paragraphs
           .link
-            .link-inside
-              a(nuxt-link="/typeface") Typeface
+            .link-inside(:class="isSelected('typeface')")
+              nuxt-link(
+                to="/typeface"
+                :class="isSelected('typeface')"
+              ) Typeface
       .category.level-1
         .label Components
         .posts
           .link
-            .link-inside.selected
-              a.selected(nuxt-link="/avatar") Avatar
+            .link-inside(:class="isSelected('avatar')")
+              nuxt-link(
+                to="/avatar"
+                :class="isSelected('avatar')"
+              ) Avatar
           .link
-            .link-inside
-              a(nuxt-link="/badges") Badges
+            .link-inside(:class="isSelected('badges')")
+              nuxt-link(
+                to="/badges"
+                :class="isSelected('badges')"
+              ) Badges
           .link
-            .link-inside
-              a(nuxt-link="/buttons") Buttons
+            .link-inside(:class="isSelected('buttons')")
+              nuxt-link(
+                to="/buttons"
+                :class="isSelected('buttons')"
+              ) Buttons
           .link
-            .link-inside
-              a(nuxt-link="/checkbox") Checkbox
+            .link-inside(:class="isSelected('checkbox')")
+              nuxt-link(
+                to="/checkbox"
+                :class="isSelected('checkbox')"
+              ) Checkbox
           .link
-            .link-inside
-              a(nuxt-link="/code") Code
+            .link-inside(:class="isSelected('code')")
+              nuxt-link(
+                to="/code"
+                :class="isSelected('code')"
+              ) Code
           .link
-            .link-inside
-              a(nuxt-link="/collapse") Collapse
+            .link-inside(:class="isSelected('collapse')")
+              nuxt-link(
+                to="/collapse"
+                :class="isSelected('collapse')"
+              ) Collapse
           .link
-            .link-inside
-              a(nuxt-link="/fieldsets") Fieldsets
+            .link-inside(:class="isSelected('fieldsets')")
+              nuxt-link(
+                to="/fieldsets"
+                :class="isSelected('fieldsets')"
+              ) Fieldsets
           .link
-            .link-inside
-              a(nuxt-link="/file-tree") File Tree
+            .link-inside(:class="isSelected('file-tree')")
+              nuxt-link(
+                to="/file-tree"
+                :class="isSelected('file-tree')"
+              ) File Tree
           .link
-            .link-inside
-              a(nuxt-link="/icons") Icons
+            .link-inside(:class="isSelected('icons')")
+              nuxt-link(
+                to="/icons"
+                :class="isSelected('icons')"
+              ) Icons
           .link
-            .link-inside
-              a(nuxt-link="/images") Images
+            .link-inside(:class="isSelected('images')")
+              nuxt-link(
+                to="/images"
+                :class="isSelected('images')"
+              ) Images
           .link
-            .link-inside
-              a(nuxt-link="/inputs") Inputs
+            .link-inside(:class="isSelected('inputs')")
+              nuxt-link(
+                to="/inputs"
+                :class="isSelected('inputs')"
+              ) Inputs
           .link
-            .link-inside
-              a(nuxt-link="/loading-dots") Loading Dots
+            .link-inside(:class="isSelected('loading-dots')")
+              nuxt-link(
+                to="/loading-dots"
+                :class="isSelected('loading-dots')"
+              ) Loading Dots
           .link
-            .link-inside
-              a(nuxt-link="/note") Note
+            .link-inside(:class="isSelected('note')")
+              nuxt-link(
+                to="/note"
+                :class="isSelected('note')"
+              ) Note
           .link
-            .link-inside
-              a(nuxt-link="/popover-menu") PopOver Menu
+            .link-inside(:class="isSelected('popover-menu')")
+              nuxt-link(
+                to="/popover-menu"
+                :class="isSelected('popover-menu')"
+              ) PopOver Menu
           .link
-            .link-inside
-              a(nuxt-link="/radio") Radio
+            .link-inside(:class="isSelected('radio')")
+              nuxt-link(
+                to="/radio"
+                :class="isSelected('radio')"
+              ) Radio
           .link
-            .link-inside
-              a(nuxt-link="/scroller") Scroller
+            .link-inside(:class="isSelected('scroller')")
+              nuxt-link(
+                to="/scroller"
+                :class="isSelected('scroller')"
+              ) Scroller
           .link
-            .link-inside
-              a(nuxt-link="/select") Select
+            .link-inside(:class="isSelected('select')")
+              nuxt-link(
+                to="/select"
+                :class="isSelected('select')"
+              ) Select
           .link
-            .link-inside
-              a(nuxt-link="/show-more") Show More
+            .link-inside(:class="isSelected('show-more')")
+              nuxt-link(
+                to="/show-more"
+                :class="isSelected('show-more')"
+              ) Show More
           .link
-            .link-inside
-              a(nuxt-link="/sliders") Sliders
+            .link-inside(:class="isSelected('sliders')")
+              nuxt-link(
+                to="/sliders"
+                :class="isSelected('sliders')"
+              ) Sliders
           .link
-            .link-inside
-              a(nuxt-link="/spinner") Spinner
+            .link-inside(:class="isSelected('spinner')")
+              nuxt-link(
+                to="/spinner"
+                :class="isSelected('spinner')"
+              ) Spinner
           .link
-            .link-inside
-              a(nuxt-link="/table") Table
+            .link-inside(:class="isSelected('table')")
+              nuxt-link(
+                to="/table"
+                :class="isSelected('table')"
+              ) Table
           .link
-            .link-inside
-              a(nuxt-link="/textarea") Textarea
+            .link-inside(:class="isSelected('textarea')")
+              nuxt-link(
+                to="/textarea"
+                :class="isSelected('textarea')"
+              ) Textarea
           .link
-            .link-inside
-              a(nuxt-link="/toasts") Toasts
+            .link-inside(:class="isSelected('toasts')")
+              nuxt-link(
+                to="/toasts"
+                :class="isSelected('toasts')"
+              ) Toasts
           .link
-            .link-inside
-              a(nuxt-link="/toggle") Toggle
+            .link-inside(:class="isSelected('toggle')")
+              nuxt-link(
+                to="/toggle"
+                :class="isSelected('toggle')"
+              ) Toggle
           .link
-            .link-inside
-              a(nuxt-link="/video-cards") Video Cards
+            .link-inside(:class="isSelected('video-cards')")
+              nuxt-link(
+                to="/video-cards"
+                :class="isSelected('video-cards')"
+              ) Video Cards
           .link
-            .link-inside
-              a(nuxt-link="/videos") Videos
+            .link-inside(:class="isSelected('videos')")
+              nuxt-link(
+                to="/videos"
+                :class="isSelected('videos')"
+              ) Videos
 </template>
+
+<script>
+export default {
+  name: 'Sidebar',
+  methods: {
+    isSelected(name) {
+      return {
+        selected: this.routeCheck(name)
+      }
+    },
+    routeCheck(name) {
+      return this.$route.name === name
+    }
+  }
+}
+</script>
 
 <style lang="stylus">
 .sidebar
@@ -153,7 +274,7 @@
         font-size 14px
         color #000
         box-sizing border-box
-        -webkit-tap-highlight-color rgba(0,0,0,0)
+        -webkit-tap-highlight-color rgbnuxt-link(0,0,0,0)
         &.selected
           text-decoration none
           font-size 14px

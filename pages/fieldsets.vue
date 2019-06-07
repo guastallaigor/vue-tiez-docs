@@ -1,12 +1,10 @@
 <template lang="pug">
   div
-    p oi
+    h2 Fieldsets
 </template>
 
 <script>
 export default {
+  name: 'fieldsets'
 }
 </script>
-
-<style lang="stylus">
-</style>

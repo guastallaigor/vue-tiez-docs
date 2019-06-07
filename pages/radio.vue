@@ -1,12 +1,10 @@
 <template lang="pug">
   div
-    p oi
+    h2 Radio
 </template>
 
 <script>
 export default {
+  name: 'radio'
 }
 </script>
-
-<style lang="stylus">
-</style>

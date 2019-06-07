@@ -1,12 +1,10 @@
 <template lang="pug">
   div
-    p oi
+    h2 File tree
 </template>
 
 <script>
 export default {
+  name: 'file-tree'
 }
 </script>
-
-<style lang="stylus">
-</style>

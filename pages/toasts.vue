@@ -1,12 +1,10 @@
 <template lang="pug">
   div
-    p oi
+    h2 Toasts
 </template>
 
 <script>
 export default {
+  name: 'toasts'
 }
 </script>
-
-<style lang="stylus">
-</style>

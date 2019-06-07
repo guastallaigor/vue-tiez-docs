@@ -1,12 +1,10 @@
 <template lang="pug">
   div
-    p oi
+    h2 Avatar
 </template>
 
 <script>
 export default {
+  name: 'avatar'
 }
 </script>
-
-<style lang="stylus">
-</style>

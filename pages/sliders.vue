@@ -1,12 +1,10 @@
 <template lang="pug">
   div
-    p oi
+    h2 Sliders
 </template>
 
 <script>
 export default {
+  name: 'sliders'
 }
 </script>
-
-<style lang="stylus">
-</style>

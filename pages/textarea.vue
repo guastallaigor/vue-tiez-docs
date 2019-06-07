@@ -1,12 +1,10 @@
 <template lang="pug">
   div
-    p oi
+    h2 Textarea
 </template>
 
 <script>
 export default {
+  name: 'textarea'
 }
 </script>
-
-<style lang="stylus">
-</style>

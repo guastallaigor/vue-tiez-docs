@@ -1,12 +1,10 @@
 <template lang="pug">
   div
-    p oi
+    h2 Contributors
 </template>
 
 <script>
 export default {
+  name: 'contributors'
 }
 </script>
-
-<style lang="stylus">
-</style>

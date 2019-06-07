@@ -1,12 +1,10 @@
 <template lang="pug">
   div
-    p oi
+    h2 Badges
 </template>
 
 <script>
 export default {
+  name: 'badges'
 }
 </script>
-
-<style lang="stylus">
-</style>

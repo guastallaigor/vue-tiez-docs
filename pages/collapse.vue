@@ -1,12 +1,10 @@
 <template lang="pug">
   div
-    p oi
+    h2 Collapse
 </template>
 
 <script>
 export default {
+  name: 'collapse'
 }
 </script>
-
-<style lang="stylus">
-</style>

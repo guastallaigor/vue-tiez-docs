@@ -62,6 +62,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/vue-tiez.js'
   ],
 
   /*
@@ -79,9 +80,11 @@ module.exports = {
       set: [
         { field: 'anonymizeIp', value: true }
       ]
-    }]
+    }],
+    'nuxt-svg-loader'
   ],
   vendor: [
+    '~/plugins/vue-tiez.js'
   ],
 
   /*

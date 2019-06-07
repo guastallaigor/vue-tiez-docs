@@ -1,12 +1,10 @@
 <template lang="pug">
   div
-    p oi
+    h2 Loading Dots
 </template>
 
 <script>
 export default {
+  name: 'loading-dots'
 }
 </script>
-
-<style lang="stylus">
-</style>

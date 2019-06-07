@@ -1,12 +1,10 @@
 <template lang="pug">
   div
-    p oi
+    h2 Browser Support
 </template>
 
 <script>
 export default {
+  name: 'browser-support'
 }
 </script>
-
-<style lang="stylus">
-</style>

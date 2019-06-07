@@ -4,7 +4,7 @@
       header
         aside.nav-upper
           a.logo
-            <svg width="43" height="38" viewBox="0 0 43 38" aria-label="geist"><g stroke="#000" fill="none" fill-rule="evenodd"><path d="M21 4l17 30H4L21 4z" stroke-dasharray="2,3"></path><rect fill="#FFF" x="17.5" y=".5" width="7" height="7" rx="3.5"></rect><rect fill="#FFF" x="35.5" y="30.5" width="7" height="7" rx="3.5"></rect><rect fill="#FFF" x=".5" y="30.5" width="7" height="7" rx="3.5"></rect></g></svg>
+            logo
           .menu-arrow
         aside.nav-lower
           .desktop-only
@@ -15,6 +15,16 @@
                   a Support
                   a Docs
 </template>
+
+<script>
+import Logo from '~/static/img/logo-icon.svg'
+
+export default {
+  components: {
+    Logo
+  }
+}
+</script>
 
 <style lang="stylus">
 .header
@@ -47,12 +57,15 @@
 
       a.logo
         display block
-        width 36px
-        height 31px
         position relative
         padding 3px 4px
         margin -3px -4px
         transition height 0.3s ease
+        cursor pointer
+
+        svg
+          width 60px
+          height 60px
 
       .menu-arrow
         display flex

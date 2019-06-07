@@ -1,12 +1,10 @@
 <template lang="pug">
   div
-    p oi
+    h2 Show more
 </template>
 
 <script>
 export default {
+  name: 'show-more'
 }
 </script>
-
-<style lang="stylus">
-</style>

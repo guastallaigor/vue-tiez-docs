@@ -1,12 +1,10 @@
 <template lang="pug">
   div
-    p oi
+    h2 Spinner
 </template>
 
 <script>
 export default {
+  name: 'spinner'
 }
 </script>
-
-<style lang="stylus">
-</style>

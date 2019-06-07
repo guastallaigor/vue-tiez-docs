@@ -1,12 +1,10 @@
 <template lang="pug">
   div
-    p oi
+    h2 Scroller
 </template>
 
 <script>
 export default {
+  name: 'scroller'
 }
 </script>
-
-<style lang="stylus">
-</style>

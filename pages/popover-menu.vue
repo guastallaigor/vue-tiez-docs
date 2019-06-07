@@ -1,12 +1,10 @@
 <template lang="pug">
   div
-    p oi
+    h2 Popover menu
 </template>
 
 <script>
 export default {
+  name: 'popover-menu'
 }
 </script>
-
-<style lang="stylus">
-</style>
