@@ -41,13 +41,15 @@
             p.copy(@click="copy(code.stackedAvatarsDark, $el)") copy
             pre(:class="{hidden: hiddenStackedAvatarsDark}")
               code.language-javascript {{ code.stackedAvatarsDark }}
+    p Props
+    .module
+      z-table(:headers="headers" :items="items")
 </template>
 
 <script>
 import code from '~/code/avatars'
 import { CollapseTransition } from 'vue2-transitions'
 import copy from '~/util/copy'
-import EventBus from '~/util/event-bus'
 
 export default {
   components: { CollapseTransition },
@@ -57,14 +59,53 @@ export default {
     hiddenAvatars: true,
     hiddenStackedAvatars: true,
     hiddenAvatarsDark: true,
-    hiddenStackedAvatarsDark: true
-  }),
-  methods: {
-    copy(code, el) {
-      this.copyToClipboard(code, el)
-      EventBus.$emit('showToast')
-    }
-  }
+    hiddenStackedAvatarsDark: true,
+    headers: [
+      {
+        name: 'Name',
+        key: 'name'
+      },
+      {
+        name: 'Type',
+        key: 'type'
+      },
+      {
+        name: 'Required',
+        key: 'required'
+      },
+      {
+        name: 'Default',
+        key: 'default'
+      },
+      {
+        name: 'Description',
+        key: 'description'
+      }
+    ],
+    items: [
+      {
+        name: 'src',
+        type: 'String',
+        required: 'false',
+        default: 'null',
+        description: 'Image source'
+      },
+      {
+        name: 'alt',
+        type: 'String',
+        required: 'false',
+        default: '\'\'',
+        description: 'Image alt attribute'
+      },
+      {
+        name: 'size',
+        type: 'String',
+        required: 'false',
+        default: '\'\'',
+        description: 'Size of the image. Valid sizes are: small, medium, large or \'\''
+      }
+    ]
+  })
 }
 </script>
 

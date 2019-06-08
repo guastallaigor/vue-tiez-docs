@@ -67,7 +67,8 @@ export default {
   <div style="display:flex;align-items:center;">
     <z-avatar src="https://zeit.co/api/www/avatar/?u=rauchg&amp;s=60" stacked="stacked" dark="dark"></z-avatar>
     <z-avatar src="https://zeit.co/api/www/avatar/?u=leo&amp;s=60" stacked="stacked" dark="dark"></z-avatar>
-    <z-avatar src="https://zeit.co/api/www/avatar/?u=timothy&amp;s=60" stacked="stacked" dark="dark"></z-avatar><span class="number-aside">+4</span>
+    <z-avatar src="https://zeit.co/api/www/avatar/?u=timothy&amp;s=60" stacked="stacked" dark="dark"></z-avatar>
+    <span class="number-aside">+4</span>
   </div>
 </div>`
 }

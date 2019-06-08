@@ -48,7 +48,7 @@ export default {
       this.toast = true
       this.timeout = setTimeout(() => {
         this.toast = false
-      }, 1800)
+      }, 5000)
     }
   }
 }
