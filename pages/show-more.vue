@@ -5,6 +5,5 @@
 
 <script>
 export default {
-  name: 'show-more'
 }
 </script>

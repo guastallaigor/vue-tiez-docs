@@ -56,13 +56,16 @@ module.exports = {
   ** Global CSS
   */
   css: [
+    '~/assets/style/main.styl'
   ],
 
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/vue-tiez.js'
+    '~/plugins/vue-tiez.js',
+    '~/plugins/vue-prism.js',
+    '~/plugins/render-string.js'
   ],
 
   /*
@@ -84,7 +87,9 @@ module.exports = {
     'nuxt-svg-loader'
   ],
   vendor: [
-    '~/plugins/vue-tiez.js'
+    '~/plugins/vue-tiez.js',
+    '~/plugins/vue-prism.js',
+    '~/plugins/render-string.js'
   ],
 
   /*
@@ -102,6 +107,8 @@ module.exports = {
           ]
         })
       })
+
+      config.resolve.alias['vue'] = 'vue/dist/vue.common'
 
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {

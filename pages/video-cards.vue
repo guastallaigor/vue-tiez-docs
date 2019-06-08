@@ -1,10 +1,9 @@
 <template lang="pug">
   div
-    h2 Installation
+    h2 Video cards
 </template>
 
 <script>
 export default {
-  name: 'installation'
 }
 </script>
