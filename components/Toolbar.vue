@@ -11,9 +11,9 @@
             .nav.right
               div
                 span.links
-                  a Blog
-                  a Support
-                  a Docs
+                  a(href="https://github.com/guastallaigor/vue-tiez")
+                    z-icon(name="github")
+                  nuxt-link(to="/") Home
 </template>
 
 <script>

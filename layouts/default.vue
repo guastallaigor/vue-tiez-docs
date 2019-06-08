@@ -1,5 +1,5 @@
 <template lang="pug">
-  .default
+  .default.relative
     toolbar
     sidebar
     div
@@ -14,16 +14,42 @@
           div.doc-markdown
             .main
               nuxt
+    div
+      .toast-area
+        .toast-container(:class="{visible: toast}")
+          .toast.success
+            span.message Copied!
 </template>
 
 <script>
 import Toolbar from '~/components/Toolbar'
 import Sidebar from '~/components/Sidebar'
+import EventBus from '~/util/event-bus'
 
 export default {
   components: {
     Toolbar,
     Sidebar
+  },
+  data: () => ({
+    toast: false
+  }),
+  created() {
+    EventBus.$on('showToast', () => {
+      this.showToast()
+    })
+  },
+  beforeDestroy() {
+    EventBus.$off('showToast')
+    clearTimeout(this.timeout)
+  },
+  methods: {
+    showToast() {
+      this.toast = true
+      this.timeout = setTimeout(() => {
+        this.toast = false
+      }, 1800)
+    }
   }
 }
 </script>
@@ -77,4 +103,62 @@ export default {
   .content
     flex 1
     max-width 600px
+</style>
+
+<style lang="stylus">
+.toast-area
+  position: fixed;
+  bottom: 10px;
+  right: 60px;
+  max-width: 110px;
+  z-index: 2000;
+  transition: transform 0.4s ease 0s;
+
+  .message
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    margin-top: -1px;
+    overflow: hidden;
+
+  .toast-container
+    width: 110px;
+    height: 72px;
+    position: absolute;
+    bottom: -10px;
+    right: 0px;
+    transform: translate3d(0px, 100%, 0px) scale(1);
+    opacity: 1;
+    transition: all 0.4s ease 0s;
+    text-align center
+
+    &.visible
+      transform: translate3d(0px, 0px, 0px) scale(1);
+
+    .toast
+      width: 110px;
+      color: black;
+      height: 60px;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 9px;
+      font-size: 14px;
+      display: flex;
+      background: white;
+      border-width: 0px;
+      border-style: initial;
+      border-color: initial;
+      border-image: initial;
+      border-radius: 5px;
+      padding: 0px 20px;
+
+      &.success
+        background-color: rgb(0, 118, 255);
+        color: white;
+        border-width: 0px;
+        border-style: initial;
+        border-color: initial;
+        border-image: initial;
 </style>

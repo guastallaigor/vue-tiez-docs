@@ -8,7 +8,7 @@
       collapse-transition.width-transition
         .overflow(v-show="!hiddenAvatars")
           .relative
-            p.copy(@click="copyToClipboard(code.avatars, $el)") copy
+            p.copy(@click="copy(code.avatars, $el)") copy
             pre
               code.language-javascript {{ code.avatars }}
     p Stacked Avatars
@@ -18,7 +18,7 @@
       collapse-transition.width-transition
         .overflow(v-show="!hiddenStackedAvatars")
           .relative
-            p.copy(@click="copyToClipboard(code.stackedAvatars, $el)") copy
+            p.copy(@click="copy(code.stackedAvatars, $el)") copy
             pre(:class="{hidden: hiddenStackedAvatars}")
               code.language-javascript {{ code.stackedAvatars }}
     p Avatars - Dark
@@ -28,7 +28,7 @@
       collapse-transition.width-transition
         .overflow(v-show="!hiddenAvatarsDark")
           .relative
-            p.copy(@click="copyToClipboard(code.avatarsDark, $el)") copy
+            p.copy(@click="copy(code.avatarsDark, $el)") copy
             pre(:class="{hidden: hiddenAvatarsDark}")
               code.language-javascript {{ code.avatarsDark }}
     p Stacked Avatars - Dark
@@ -38,7 +38,7 @@
       collapse-transition.width-transition
         .overflow(v-show="!hiddenStackedAvatarsDark")
           .relative
-            p.copy(@click="copyToClipboard(code.stackedAvatarsDark, $el)") copy
+            p.copy(@click="copy(code.stackedAvatarsDark, $el)") copy
             pre(:class="{hidden: hiddenStackedAvatarsDark}")
               code.language-javascript {{ code.stackedAvatarsDark }}
 </template>
@@ -46,7 +46,8 @@
 <script>
 import code from '~/code/avatars'
 import { CollapseTransition } from 'vue2-transitions'
-import copy from '~/mixins/copy'
+import copy from '~/util/copy'
+import EventBus from '~/util/event-bus'
 
 export default {
   components: { CollapseTransition },
@@ -57,7 +58,13 @@ export default {
     hiddenStackedAvatars: true,
     hiddenAvatarsDark: true,
     hiddenStackedAvatarsDark: true
-  })
+  }),
+  methods: {
+    copy(code, el) {
+      this.copyToClipboard(code, el)
+      EventBus.$emit('showToast')
+    }
+  }
 }
 </script>
 
