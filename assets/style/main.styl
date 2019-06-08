@@ -47,12 +47,8 @@ pre[class*="language-"]
   font-size 13px !important
   line-height 20px !important
   margin 0 !important
-  padding 20px !important
   text-shadow 0 1px white !important
   color #0076ff !important
-  &::selection
-    color rgb(0, 0, 0) !important
-    background rgb(255, 0, 128) !important
 
 .token
   &.punctuation, &.operator
@@ -67,6 +63,10 @@ pre[class*="language-"]
     color: #0076ff !important
   &.comment, &.prolog, &.doctype, &.cdata
     color: #999 !important
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection, code[class*="language-"]::selection, code[class*="language-"] ::selection
+  color white !important
+  background rgb(255, 0, 128) !important
 
 .hidden
   display none !important
