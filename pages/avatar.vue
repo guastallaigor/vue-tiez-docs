@@ -86,7 +86,7 @@ export default {
       {
         name: 'src',
         type: 'String',
-        required: 'false',
+        required: 'true',
         default: 'null',
         description: 'Image source'
       },
@@ -103,6 +103,20 @@ export default {
         required: 'false',
         default: '\'\'',
         description: 'Size of the image. Valid sizes are: small, medium, large or \'\''
+      },
+      {
+        name: 'dark',
+        type: 'Boolean',
+        required: 'false',
+        default: 'false',
+        description: 'Set component to dark mode'
+      },
+      {
+        name: 'stacked',
+        type: 'Boolean',
+        required: 'false',
+        default: 'false',
+        description: 'Set component to stacked mode. This is mostly used with a v-for directive.'
       }
     ]
   })
