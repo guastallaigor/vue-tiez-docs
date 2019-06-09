@@ -82,7 +82,7 @@ export default {
         type: 'String',
         required: 'false',
         default: '\'\'',
-        description: 'Size of the image. Valid sizes are: small, medium, large or \'\''
+        description: 'Size of the image. Valid sizes are: small, medium, large and \'\''
       },
       {
         name: 'dark',

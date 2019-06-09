@@ -70,7 +70,7 @@ export default {
         type: 'String',
         required: 'false',
         default: 'black',
-        description: 'Color of the badge. Valid sizes are: red, black, or dark (white background with black text)'
+        description: 'Color of the badge. Valid sizes are: red, black, and dark (white background with black text)'
       }
     ]
   })
