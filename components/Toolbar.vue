@@ -37,7 +37,7 @@ export default {
   header
     justify-content space-between
     max-width 100%
-    margin 2px 10px
+    margin 0 10px
     width auto
     position relative
     transition height 0.3s ease

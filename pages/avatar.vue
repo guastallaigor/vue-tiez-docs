@@ -50,6 +50,7 @@
 import code from '~/code/avatars'
 import { CollapseTransition } from 'vue2-transitions'
 import copy from '~/util/copy'
+import headers from '~/util/headers'
 
 export default {
   components: { CollapseTransition },
@@ -60,28 +61,7 @@ export default {
     hiddenStackedAvatars: true,
     hiddenAvatarsDark: true,
     hiddenStackedAvatarsDark: true,
-    headers: [
-      {
-        name: 'Name',
-        key: 'name'
-      },
-      {
-        name: 'Type',
-        key: 'type'
-      },
-      {
-        name: 'Required',
-        key: 'required'
-      },
-      {
-        name: 'Default',
-        key: 'default'
-      },
-      {
-        name: 'Description',
-        key: 'description'
-      }
-    ],
+    headers,
     items: [
       {
         name: 'src',
@@ -116,7 +96,7 @@ export default {
         type: 'Boolean',
         required: 'false',
         default: 'false',
-        description: 'Set component to stacked mode. This is mostly used with a v-for directive.'
+        description: 'Set component to stacked mode. This is mostly used with a v-for directive'
       }
     ]
   })
