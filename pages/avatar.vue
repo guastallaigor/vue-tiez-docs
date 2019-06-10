@@ -89,7 +89,7 @@ export default {
         type: 'Boolean',
         required: 'false',
         default: 'false',
-        description: 'Set component to dark mode'
+        description: 'Set avatar to dark mode'
       },
       {
         name: 'stacked',
