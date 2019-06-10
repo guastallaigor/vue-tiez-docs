@@ -32,7 +32,7 @@ export default {
   top 0px
   left 0px
   right 0px
-  z-index 1
+  z-index 0
 
   header
     justify-content space-between

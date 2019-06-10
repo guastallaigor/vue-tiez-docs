@@ -5,10 +5,6 @@ Vue.component('render-string', {
     string: {
       required: true,
       type: String
-    },
-    items: {
-      required: false,
-      type: Array
     }
   },
   render(h) {
