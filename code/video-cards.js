@@ -5,7 +5,7 @@ export default {
     src="https://image.mux.com/R6cYGw4NLjuquRZsxBuyXyzNLmIyZQjZ/thumbnail.jpg?time=15&width=430&height=240&smart_crop=true"
     title="Guillermo Rauch - Universal React Made Easy and Simple"
     subtitle="React Conf 2017"
-    width="500px"
+    width="1280px"
     />
 </div>`,
   smallCard: `
@@ -23,7 +23,7 @@ export default {
     src="https://image.mux.com/R6cYGw4NLjuquRZsxBuyXyzNLmIyZQjZ/thumbnail.jpg?time=15&width=430&height=240&smart_crop=true"
     title="Guillermo Rauch - Universal React Made Easy and Simple"
     subtitle="React Conf 2017"
-    width="500px"
+    width="1280px"
     dark
     />
 </div>`,

@@ -38,29 +38,17 @@
                 :class="isSelected('colors')"
               ) Colors
           .link
-            .link-inside(:class="isSelected('headings')")
+            .link-inside(:class="isSelected('grid')")
               nuxt-link(
-                to="/headings"
-                :class="isSelected('headings')"
-              ) Headings
+                to="/grid"
+                :class="isSelected('grid')"
+              ) Grid
           .link
-            .link-inside(:class="isSelected('lists')")
+            .link-inside(:class="isSelected('typography')")
               nuxt-link(
-                to="/lists"
-                :class="isSelected('lists')"
-              ) Lists
-          .link
-            .link-inside(:class="isSelected('paragraphs')")
-              nuxt-link(
-                to="/paragraphs"
-                :class="isSelected('paragraphs')"
-              ) Paragraphs
-          .link
-            .link-inside(:class="isSelected('typeface')")
-              nuxt-link(
-                to="/typeface"
-                :class="isSelected('typeface')"
-              ) Typeface
+                to="/typography"
+                :class="isSelected('typography')"
+              ) Typography
       .category.level-1
         .label Components
         .posts
@@ -208,6 +196,12 @@
                 to="/toggle"
                 :class="isSelected('toggle')"
               ) Toggle
+          .link
+            .link-inside(:class="isSelected('tooltip')")
+              nuxt-link(
+                to="/tooltip"
+                :class="isSelected('tooltip')"
+              ) Tooltip
           .link
             .link-inside(:class="isSelected('video-cards')")
               nuxt-link(

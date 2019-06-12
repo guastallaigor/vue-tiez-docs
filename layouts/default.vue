@@ -102,7 +102,7 @@ export default {
 
   .content
     flex 1
-    max-width 600px
+    max-width 840px
 </style>
 
 <style lang="stylus">
