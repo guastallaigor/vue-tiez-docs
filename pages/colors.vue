@@ -2,7 +2,7 @@
   div
     h2 Colors
     .wrapper
-      div.subtitle Primary — Black & White
+      .subtitle Primary — Black & White
     .container(
       v-for="itemPrimary in colorsPrimary"
       :key="itemPrimary.name"
@@ -12,7 +12,7 @@
         :style="{background: itemPrimary.name, color: itemPrimary.color}"
       ) {{ itemPrimary.copied ? 'Copied!' : itemPrimary.name }}
     .wrapper
-      div.subtitle Secondary — Blue, Magenta, Orange, Yellow & Green
+      .subtitle Secondary — Blue, Magenta, Orange, Yellow & Green
     template(v-for="itemSecondary in colorsSecondary")
       .container(
         :key="itemSecondary.name"
@@ -23,7 +23,7 @@
         ) {{ itemSecondary.copied ? 'Copied!' : itemSecondary.name }}
       br(v-if="itemSecondary.name === '#FAFBFC' || itemSecondary.name === '#FF0080' || itemSecondary.name === '#F8E71C' || itemSecondary.name === '#79FFE1'")
     .wrapper
-      div.subtitle Accents — Gray
+      .subtitle Accents — Gray
     .container(
       v-for="itemAccent in colorsAccents"
       :key="itemAccent.name"
