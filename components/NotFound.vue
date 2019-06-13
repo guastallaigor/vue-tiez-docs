@@ -11,8 +11,10 @@
     .wrapper
       .subtitle Also, make sure to check our opened issues and PRs to see if the {{ text.replace(/s$/, '') }} is already made or under development
       .mt-20
-        github-button.mr-btn(href="https://github.com/guastallaigor/vue-tiez/issues" data-icon="octicon-issue-opened" data-size="large" data-show-count="true" aria-label="Issue guastallaigor/vue-tiez on GitHub") Issue
-        github-button(href="https://github.com/guastallaigor/vue-tiez/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork guastallaigor/vue-tiez on GitHub") Fork
+        z-spinner.is-loading-contributor(v-if="loading" size="40px")
+        div(v-show="!loading")
+          github-button.mr-btn(href="https://github.com/guastallaigor/vue-tiez/issues" data-icon="octicon-issue-opened" data-size="large" data-show-count="true" aria-label="Issue guastallaigor/vue-tiez on GitHub") Issue
+          github-button(href="https://github.com/guastallaigor/vue-tiez/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork guastallaigor/vue-tiez on GitHub") Fork
 </template>
 
 <script>
@@ -31,6 +33,16 @@ export default {
       type: String,
       default: 'components'
     }
+  },
+  data: () => ({
+    loading: true,
+    timeout: null
+  }),
+  mounted() {
+    this.timeout = setTimeout(() => {
+      this.loading = false
+      clearTimeout(this.timeout)
+    }, 400)
   }
 }
 </script>
