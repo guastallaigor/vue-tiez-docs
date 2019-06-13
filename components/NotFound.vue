@@ -53,7 +53,4 @@ export default {
 
 .mt-20
   margin-top 20px
-
-.mt-20
-  margin-top 20px
 </style>
