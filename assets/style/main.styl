@@ -70,6 +70,9 @@ pre[class*="language-"]
   &.comment, &.prolog, &.doctype, &.cdata
     color: #999 !important
 
+.is-hr
+  border-top 1px solid #999
+
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection, code[class*="language-"]::selection, code[class*="language-"] ::selection
   color white !important
   background rgb(255, 0, 128) !important
@@ -92,8 +95,16 @@ pre[class*="language-"]::selection, pre[class*="language-"] ::selection, code[cl
 :not(pre) > code[class*="language-"], pre[class*="language-"]
   background none !important
 
+.title
+  display flex
+  align-items center
+  flex-flow row nowrap
+
 .pointer
   cursor pointer
+
+.mr-left
+  margin-left 1em
 // to fix
 .z-button
   transition all 0.2s ease !important
