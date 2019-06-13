@@ -64,6 +64,7 @@ module.exports = {
   */
   plugins: [
     '~/plugins/vue-tiez.js',
+    '~/plugins/vue-github-button.js',
     '~/plugins/vue-prism.js',
     '~/plugins/render-string.js'
   ],
@@ -88,6 +89,7 @@ module.exports = {
   ],
   vendor: [
     '~/plugins/vue-tiez.js',
+    '~/plugins/vue-github-button.js',
     '~/plugins/vue-prism.js',
     '~/plugins/render-string.js'
   ],

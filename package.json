@@ -23,6 +23,7 @@
     "nuxt": "^2.4.0",
     "nuxt-purgecss": "^0.2.1",
     "nuxt-svg-loader": "^1.0.1",
+    "vue-github-button": "^1.0.8",
     "vue-prism": "^1.0.5",
     "vue-tiez": "^0.1.4",
     "vue2-transitions": "^0.3.0"

@@ -3,7 +3,7 @@
     h2 Colors
     .wrapper
       .subtitle Primary — Black & White
-    .container(
+    .container-block(
       v-for="itemPrimary in colorsPrimary"
       :key="itemPrimary.name"
       @click="copyTimeout(itemPrimary, $el)"
@@ -14,7 +14,7 @@
     .wrapper
       .subtitle Secondary — Blue, Magenta, Orange, Yellow & Green
     template(v-for="itemSecondary in colorsSecondary")
-      .container(
+      .container-block(
         :key="itemSecondary.name"
         @click="copyTimeout(itemSecondary, $el)"
       )
@@ -24,7 +24,7 @@
       br(v-if="itemSecondary.name === '#FAFBFC' || itemSecondary.name === '#FF0080' || itemSecondary.name === '#F8E71C' || itemSecondary.name === '#79FFE1'")
     .wrapper
       .subtitle Accents — Gray
-    .container(
+    .container-block(
       v-for="itemAccent in colorsAccents"
       :key="itemAccent.name"
       @click="copyTimeout(itemAccent, $el)"
