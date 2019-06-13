@@ -2,38 +2,37 @@
   div
     h1 Installation
     h2 Install with npm or yarn
-    .subtitle Right now this is the only method of installation
     .module(style="margin-bottom:30px")
       p.copy(@click="copy(code.npmYarn, $el)") copy
       pre
         code.bash {{ code.npmYarn }}
     h2 CDN
     .subtitle This is the links available in CDN, but you should install it via npm or yarn
-    .module(style="margin-bottom:30px")
+    .module(style="margin-bottom:30px;margin-top:20px;")
       p.copy(@click="copy(code.cdn, $el)") copy
       pre
         code.bash {{ code.cdn }}
     h2 Usage
     .subtitle You can import in your application's main entry point file
-    .module(style="margin-bottom:30px")
+    .module(style="margin-bottom:30px;margin-top:20px;")
       p.copy(@click="copy(code.normalUsage, $el)") copy
       pre
         code.bash {{ code.normalUsage }}
     .subtitle Or locally in any component
-    .module(style="margin-bottom:30px")
+    .module(style="margin-bottom:30px;margin-top:20px;")
       p.copy(@click="copy(code.locallyUsage, $el)") copy
       pre
         code.bash {{ code.locallyUsage }}
     .subtitle You will also need to include the Vue Tiez CSS file
-    .subtitle Simply include this CSS file in your index.html or import the actual SASS file or the minified css in your application's main entry point file
-    .module(style="margin-bottom:30px")
+    .subtitle Simply include this CSS file in your index.html or import the actual SASS file or the minified CSS in your application's main entry point file
+    .module(style="margin-bottom:30px;margin-top:20px;")
       p.copy(@click="copy(code.css, $el)") copy
       pre
         code.bash {{ code.css }}
     h2 Nuxt.js
     .subtitle You can import as a Nuxt.js plugin, just like normal Vue.js import
     .subtitle But then import it in your "nuxt.config.js" file
-    .module(style="margin-bottom:30px")
+    .module(style="margin-top:20px;")
       p.copy(@click="copy(code.nuxt, $el)") copy
       pre
         code.bash {{ code.nuxt }}
