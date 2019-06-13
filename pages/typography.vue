@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    h2 Headings
+    h2 Typography
 </template>
 
 <script>

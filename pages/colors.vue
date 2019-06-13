@@ -172,7 +172,7 @@ export default {
 }
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 .proof
   color: white;
   font-size: 12px;

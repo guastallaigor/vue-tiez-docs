@@ -4,6 +4,7 @@
     .wrapper
       .subtitle Created by &nbsp;
         a.is-doc-link(href="https://github.com/guastallaigor") @guastallaigor
+      .subtitle Logo by Breno Daroz
     .wrapper
       .subtitle Vue Tiez is under the &nbsp;
         a.is-doc-link(href="https://github.com/guastallaigor/vue-tiez/blob/master/LICENSE") MIT

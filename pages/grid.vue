@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    h2 Typeface
+    h2 Grid
 </template>
 
 <script>
