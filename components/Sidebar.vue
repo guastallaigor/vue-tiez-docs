@@ -11,12 +11,6 @@
                 :class="isSelected('installation')"
               ) Installation
           .link
-            .link-inside(:class="isSelected('configuration')")
-              nuxt-link(
-                to="/configuration"
-                :class="isSelected('configuration')"
-              ) Configuration
-          .link
             .link-inside(:class="isSelected('browser-support')")
               nuxt-link(
                 to="/browser-support"
@@ -28,6 +22,12 @@
                 to="/contributors"
                 :class="isSelected('contributors')"
               ) Contributors
+          .link
+            .link-inside(:class="isSelected('about')")
+              nuxt-link(
+                to="/about"
+                :class="isSelected('about')"
+              ) About
       .category.level-1
         .label Styles
         .posts
