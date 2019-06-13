@@ -42,7 +42,7 @@ export default {
     this.timeout = setTimeout(() => {
       this.loading = false
       clearTimeout(this.timeout)
-    }, 650)
+    }, 1000)
   }
 }
 </script>
