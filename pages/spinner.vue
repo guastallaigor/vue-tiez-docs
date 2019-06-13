@@ -67,7 +67,7 @@ export default {
         type: 'String',
         required: 'false',
         default: '20px',
-        description: 'Size of the spinner component. Amount plus any valid CSS unit (px, em, rem)'
+        description: 'Size of the spinner. Amount plus any valid CSS unit (px, em, rem)'
       },
       {
         name: 'dark',

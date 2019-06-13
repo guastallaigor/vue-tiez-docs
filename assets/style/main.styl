@@ -77,9 +77,23 @@ pre[class*="language-"]::selection, pre[class*="language-"] ::selection, code[cl
 .hidden
   display none !important
 
+.normal-grid
+  display grid
+  width 100%
+  height 100%
+  margin-left -20px
+  grid-auto-rows minmax(100px, auto)
+  grid-template-columns repeat(auto-fill, minmax(100px, 1fr))
+  .module
+    justify-self center
+    align-self center
+    padding 20px
+
 :not(pre) > code[class*="language-"], pre[class*="language-"]
   background none !important
 
+.pointer
+  cursor pointer
 // to fix
 .z-button
   transition all 0.2s ease !important
@@ -106,3 +120,5 @@ pre[class*="language-"]::selection, pre[class*="language-"] ::selection, code[cl
 // add event table to docs
 // add slot table to docs
 // add label to the input docs
+// add spectrum to icon-obj storybook
+// unchecked icon is bugged
