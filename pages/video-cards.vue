@@ -46,7 +46,7 @@
       z-table(:headers="headers" :items="items")
 </template>
 <script>
-import code from '~/code/video-cards'
+import code from '~/code/video-card'
 import { CollapseTransition } from 'vue2-transitions'
 import copy from '~/util/copy'
 import headers from '~/util/headers'

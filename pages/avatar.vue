@@ -47,7 +47,7 @@
 </template>
 
 <script>
-import code from '~/code/avatars'
+import code from '~/code/avatar'
 import { CollapseTransition } from 'vue2-transitions'
 import copy from '~/util/copy'
 import headers from '~/util/headers'

@@ -64,12 +64,16 @@
     p Props
     .module
       z-table(:headers="headers" :items="items")
+    p Events
+    .module
+      z-table(:headers="headersEvents" :items="itemsEvents")
 </template>
 <script>
 import code from '~/code/toggle'
 import { CollapseTransition } from 'vue2-transitions'
 import copy from '~/util/copy'
 import headers from '~/util/headers'
+import headersEvents from '~/util/headers-events'
 
 export default {
   components: { CollapseTransition },
@@ -83,6 +87,13 @@ export default {
     hiddenCheckedDark: true,
     hiddenDisabledDark: true,
     headers,
+    headersEvents,
+    itemsEvents: [
+      {
+        name: 'click',
+        description: 'Emit an input event'
+      }
+    ],
     items: [
       {
         name: 'value',

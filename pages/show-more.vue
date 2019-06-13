@@ -24,12 +24,16 @@
     p Props
     .module
       z-table(:headers="headers" :items="items")
+    p Events
+    .module
+      z-table(:headers="headersEvents" :items="itemsEvents")
 </template>
 <script>
 import code from '~/code/show-more'
 import { CollapseTransition } from 'vue2-transitions'
 import copy from '~/util/copy'
 import headers from '~/util/headers'
+import headersEvents from '~/util/headers-events'
 
 export default {
   components: { CollapseTransition },
@@ -39,6 +43,13 @@ export default {
     hiddenShowMore: true,
     hiddenShowMoreDark: true,
     headers,
+    headersEvents,
+    itemsEvents: [
+      {
+        name: 'click',
+        description: 'Emit a click event'
+      }
+    ],
     items: [
       {
         name: 'more',
