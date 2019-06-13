@@ -235,7 +235,7 @@ export default {
 <style lang="stylus">
 .sidebar
   position fixed
-  width 270px
+  width 240px
   margin-top 0
   bottom 0
   left 0

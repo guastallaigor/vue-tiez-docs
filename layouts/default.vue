@@ -57,7 +57,7 @@ export default {
 <style lang="stylus" scoped>
 .doc-layout
   display flex
-  margin 0 0 0px 270px
+  margin 0 0 0px 240px
   justify-content left
   background #fafafa
   padding 100px 0 60px 100px
