@@ -58,6 +58,5 @@ export default {
   opacity 0.7
 
 .is-loading-contributor
-  margin-top 20px
-  margin-left 20px
+  margin 20px 0 31px 20px
 </style>

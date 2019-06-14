@@ -2,14 +2,17 @@
   div
     h1 About
     .wrapper
-      .subtitle Created by &nbsp;
+      h4 Vue Tiez &nbsp;
+        span.font-normal © Igor Guastalla de Lima
+    .wrapper
+      .subtitle Released under the &nbsp;
+        a.is-doc-link(href="https://github.com/guastallaigor/vue-tiez/blob/master/LICENSE") MIT
+        | &nbsp; license
+    .wrapper
+      .subtitle Authored and maintained by &nbsp;
         a.is-doc-link(href="https://github.com/guastallaigor") @guastallaigor
       .subtitle Logo by &nbsp;
         a.is-doc-link(href="https://twitter.com/brenomzy") @brenomzy
-    .wrapper
-      .subtitle Vue Tiez is under the &nbsp;
-        a.is-doc-link(href="https://github.com/guastallaigor/vue-tiez/blob/master/LICENSE") MIT
-        | &nbsp; license
     .wrapper
       .subtitle This is an unofficial project
     .wrapper
